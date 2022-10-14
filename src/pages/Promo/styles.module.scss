@@ -1,0 +1,29 @@
+.note {
+	text-transform: uppercase;
+	position: relative;
+	z-index: 1;
+
+	.title {
+		display: block;
+		font-size: 100px;
+		line-height: 109px;
+		font-weight: 300;
+		letter-spacing: 4px;
+	}
+
+	.subtitle {
+		display: block;
+		font-size: 34px;
+		font-weight: 400;
+	}
+
+	.bold {
+		font-weight: 900;
+	}
+
+	.buttonContainer {
+		position: absolute;
+		bottom: 20px;
+		right: 100px;
+	}
+}

@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+	//height: 450px;
+}
+
+.note {
+	width: 780px;
+	background: white;
+	padding: 20px 30px;
+	overflow: scroll;
+	box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 40px;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}

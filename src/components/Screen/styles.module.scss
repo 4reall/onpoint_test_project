@@ -1,0 +1,21 @@
+.note {
+	padding: 190px 46px 16px 70px;
+	min-width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
+
+	img {
+		pointer-events: none;
+		user-select: none;
+	}
+}
+
+.background {
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
