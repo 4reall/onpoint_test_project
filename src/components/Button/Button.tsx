@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef } from 'react';
 import classNames from 'classnames';
-import styles from './styles.module.scss';
+import styles from 'components/Button/button.module.scss';
 
 interface ButtonOwnProps {}
 

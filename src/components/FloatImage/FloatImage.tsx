@@ -1,5 +1,5 @@
-import styles from './styles.module.scss';
-import { PropsWithChildren } from 'react';
+import styles from 'components/FloatImage/floatImage.module.scss';
+import { CSSProperties, PropsWithChildren } from 'react';
 import classNames from 'classnames';
 
 interface FloatImageProps {
@@ -15,6 +15,7 @@ interface FloatImageProps {
 	h?: number;
 	blur?: number;
 	opacity?: number;
+	backgroundColor?: CSSProperties['backgroundColor'];
 	className?: string;
 }
 
@@ -28,6 +29,7 @@ const FloatImage = ({
 	opacity,
 	blur,
 	className,
+	backgroundColor,
 }: PropsWithChildren<FloatImageProps>) => {
 	return (
 		<span
@@ -40,6 +42,7 @@ const FloatImage = ({
 				height: h,
 				filter: `blur(${blur}px)`,
 				opacity: opacity + '%',
+				backgroundColor,
 			}}
 		>
 			{children}

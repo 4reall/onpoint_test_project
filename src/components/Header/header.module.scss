@@ -1,0 +1,39 @@
+$base_size: 18px;
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 26px 70px;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+	border: none;
+	background: transparent;
+
+	svg {
+		width: 26px;
+		height: 26px;
+	}
+}
+
+.divider {
+	display: block;
+	height: 30px;
+	width: 1px;
+	background: black;
+	margin: 0 15px;
+}
+
+.title {
+	font-size: $base_size;
+	line-height: $base_size;
+	text-transform: uppercase;
+}

@@ -1,6 +1,6 @@
 import { ComponentProps } from 'react';
-import { ReactComponent as Home } from 'assets/home.svg';
-import styles from './styles.module.scss';
+import { ReactComponent as Home } from 'assets/images/home.svg';
+import styles from 'components/Header/header.module.scss';
 
 interface HeaderProps {
 	onClick: ComponentProps<'button'>['onClick'];

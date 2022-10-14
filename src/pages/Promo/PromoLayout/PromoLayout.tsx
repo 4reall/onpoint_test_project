@@ -1,21 +1,21 @@
-import bg from 'assets/bg.png';
+import bg from 'assets/images/promo/bg.png';
 import FloatImage from 'components/FloatImage/FloatImage';
-import sperm from 'assets/pink_sperm.png';
-import ball from 'assets/blue_ball.png';
-import virus from 'assets/blue_virus.png';
-import cell from 'assets/blue_cell.png';
-import worm from 'assets/blue_worm.png';
+import sperm from 'assets/images/pink_sperm.png';
+import ball from 'assets/images/promo/blue_ball.png';
+import virus from 'assets/images/promo/blue_virus.png';
+import cell from 'assets/images/promo/blue_cell.png';
+import worm from 'assets/images/promo/blue_worm.png';
 import Screen from 'components/Screen/Screen';
 import { PropsWithChildren } from 'react';
-import styles from './styles.module.scss';
+import styles from 'pages/Promo/PromoLayout/promoLayout.module.scss';
 
 const PromoLayout = ({ children }: PropsWithChildren<{}>) => {
 	return (
-		<Screen background={bg}>
+		<Screen backgroundImage={bg} className={styles.screen}>
 			{children}
 			<FloatImage
 				zIndex={3}
-				position={{ top: 85, right: -25 }}
+				position={{ top: 70, right: -45 }}
 				w={650}
 				h={250}
 			>
@@ -33,7 +33,7 @@ const PromoLayout = ({ children }: PropsWithChildren<{}>) => {
 			<FloatImage
 				className={styles.circularAnimation}
 				zIndex={3}
-				position={{ top: 180, right: 60 }}
+				position={{ top: 180, right: 90 }}
 				w={120}
 				h={120}
 			>

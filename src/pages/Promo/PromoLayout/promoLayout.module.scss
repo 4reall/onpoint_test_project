@@ -1,3 +1,7 @@
+.screen {
+	padding-top: 160px;
+}
+
 @keyframes scale {
 	0% {
 		transform: scale3d(1, 1, 1) translateX(20px);
@@ -18,13 +22,13 @@
 
 @keyframes circular {
 	0% {
-		transform: rotate(0deg) translateX(40px);
+		transform: rotate(-240deg) translateX(60px);
 	}
 	50% {
-		transform: rotate(180deg) translateX(40px);
+		transform: rotate(-60deg) translateX(60px);
 	}
 	100% {
-		transform: rotate(360deg) translateX(40px);
+		transform: rotate(120deg) translateX(60px);
 	}
 }
 
@@ -33,7 +37,7 @@
 		transform: translateX(0) translateY(0);
 	}
 	25% {
-		transform: translateX(10px) translateY(20px);
+		transform: translateX(30px) translateY(60px);
 	}
 	65% {
 		transform: translateX(-60px) translateY(10px);
