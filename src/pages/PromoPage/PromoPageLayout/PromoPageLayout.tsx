@@ -7,9 +7,9 @@ import cell from 'assets/images/promo/blue_cell.png';
 import worm from 'assets/images/promo/blue_worm.png';
 import Screen from 'components/Screen/Screen';
 import { PropsWithChildren } from 'react';
-import styles from 'pages/Promo/PromoLayout/promoLayout.module.scss';
+import styles from 'pages/PromoPage/PromoPageLayout/promoPageLayout.module.scss';
 
-const PromoLayout = ({ children }: PropsWithChildren<{}>) => {
+const PromoLayoutPage = ({ children }: PropsWithChildren<{}>) => {
 	return (
 		<Screen backgroundImage={bg} className={styles.screen}>
 			{children}
@@ -84,4 +84,4 @@ const PromoLayout = ({ children }: PropsWithChildren<{}>) => {
 	);
 };
 
-export default PromoLayout;
+export default PromoLayoutPage;

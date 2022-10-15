@@ -1,0 +1,87 @@
+.fadeInEnter {
+	opacity: 0;
+}
+
+.fadeInEnterActive {
+	transition: 200ms;
+	opacity: 1;
+}
+
+.fadeInExit {
+	opacity: 1;
+}
+
+.fadeInExitActive {
+	transition: 200ms;
+	opacity: 0;
+}
+
+.modal {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: calc(100vw - 190px);
+	height: calc(100vh - 220px);
+	z-index: 20;
+	margin: 160px 70px 70px 120px;
+}
+
+.overlay {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(22, 39, 62, 0.7);
+	z-index: -1;
+}
+
+.content {
+	position: relative;
+	padding: 32px;
+	border-radius: 40px;
+	width: 100%;
+	height: 100%;
+	background: white;
+}
+
+.closeBtn {
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	right: 32px;
+	top: 32px;
+	border: none;
+	background: none;
+
+	span {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		&:before {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			content: '';
+			background: black;
+			width: 50px;
+			height: 4px;
+			transform-origin: left;
+			transform: rotate(-45deg);
+		}
+
+		&:after {
+			right: 0;
+			bottom: 0;
+			position: absolute;
+			content: '';
+			background: black;
+			width: 50px;
+			height: 4px;
+			transform-origin: right;
+			transform: rotate(45deg);
+		}
+	}
+}

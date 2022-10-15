@@ -4,14 +4,14 @@
 
 .button {
 	height: 80px;
-	padding-left: 50px;
-	min-width: 290px;
+	padding-left: 60px;
+	min-width: 270px;
 	position: relative;
 	border-radius: 40px;
 	border: none;
 	font-family: DINPro, sans-serif;
 	background: variables.$main_color;
-	font-size: 30px;
+	font-size: 26px;
 
 	.circleWrapper {
 		display: flex;

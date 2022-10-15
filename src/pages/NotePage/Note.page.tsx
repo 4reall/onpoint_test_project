@@ -1,6 +1,6 @@
 import ScrollableNote from 'components/ScrollableNote/ScrollableNote';
-import styles from 'pages/Note/notePage.module.scss';
-import NotePageLayout from 'pages/Note/NotePageLayout/NotePageLayout';
+import styles from 'pages/NotePage/notePage.module.scss';
+import NotePageLayout from 'pages/NotePage/NotePageLayout/NotePageLayout';
 
 const NotePage = () => {
 	return (

@@ -17,8 +17,7 @@ const Screen = ({
 }: PropsWithChildren<ScreenProps>) => {
 	return (
 		<section
-			draggable={false}
-			className={classNames(styles.container, className)}
+			className={classNames(className, styles.container)}
 			style={{ backgroundColor }}
 		>
 			<Header onClick={() => {}} />

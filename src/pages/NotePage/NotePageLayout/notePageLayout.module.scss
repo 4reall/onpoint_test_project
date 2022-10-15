@@ -4,8 +4,7 @@ $blue: rgb(57, 196, 250);
 $pink: rgb(217, 79, 142);
 
 .screen {
-	padding-top: 135px;
-	padding-bottom: 80px;
+	padding: 135px 20px 80px 70px;
 }
 
 .content {
@@ -81,9 +80,9 @@ $pink: rgb(217, 79, 142);
 }
 
 .fadeInAnimation1 {
-	animation: fadeIn1 4s linear;
+	animation: fadeIn1 3s linear;
 }
 
 .fadeInAnimation2 {
-	animation: fadeIn2 4s linear;
+	animation: fadeIn2 3s linear;
 }

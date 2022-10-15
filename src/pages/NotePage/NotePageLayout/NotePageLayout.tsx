@@ -1,7 +1,7 @@
 import Screen from 'components/Screen/Screen';
 import { PropsWithChildren } from 'react';
 import FloatImage from 'components/FloatImage/FloatImage';
-import styles from 'pages/Note/NotePageLayout/notePageLayout.module.scss';
+import styles from 'pages/NotePage/NotePageLayout/notePageLayout.module.scss';
 import sperm from 'assets/images/pink_sperm.png';
 
 const NotePageLayout = ({ children }: PropsWithChildren<{}>) => {

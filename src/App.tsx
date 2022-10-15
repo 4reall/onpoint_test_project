@@ -1,14 +1,21 @@
-import Promo from 'pages/Promo/Promo';
-import Slider from 'components/Slider/Slider';
-import ScrollableNote from 'components/ScrollableNote/ScrollableNote';
-import NotePage from 'pages/Note/NotePage';
-import Screen from 'components/Screen/Screen';
+import BenefitsPage from 'pages/BenefitsPage/Benefits.page';
+import Carousel from 'components/Carousel/Carousel';
+import PromoPage from 'pages/PromoPage/Promo.page';
+import NotePage from 'pages/NotePage/Note.page';
 
 const App = () => {
 	return (
 		<>
-			{/*<Promo />*/}
-			<NotePage />
+			<Carousel
+				width={document.documentElement.clientWidth}
+				height={document.documentElement.clientHeight}
+			>
+				<PromoPage />
+				<NotePage />
+				<BenefitsPage />
+			</Carousel>
+
+			{/*<PromoPage/>*/}
 		</>
 	);
 };

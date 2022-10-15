@@ -1,0 +1,35 @@
+.container {
+}
+
+.window {
+	position: relative;
+	overflow: hidden;
+	height: 200px;
+	z-index: 2;
+}
+
+.truck {
+	position: absolute;
+	height: 100%;
+	display: flex;
+	transition: all 500ms;
+}
+
+.slide {
+	height: 100%;
+}
+
+.controls {
+	&Dot {
+	}
+
+	&ArrowLeft {
+		width: 30px;
+		height: 30px;
+	}
+
+	&ArrowRight {
+		width: 30px;
+		height: 30px;
+	}
+}

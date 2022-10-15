@@ -1,0 +1,40 @@
+.content {
+	padding-top: 40px;
+	padding-left: 230px;
+}
+
+.title {
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	margin-inline: -8px;
+	font-family: DINPro, sans-serif;
+	font-weight: 500;
+	font-size: 100px;
+	letter-spacing: 10px;
+}
+
+.subtitle {
+	font-family: DINPro, sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.redBox {
+	width: 100%;
+	height: 100%;
+	background: red;
+}
+
+.blueBox {
+	width: 100%;
+	height: 100%;
+	background: blue;
+}
+
+.greenBox {
+	width: 100%;
+	height: 100%;
+	background: green;
+}

@@ -1,35 +1,54 @@
-$gilroy-font-path: "../assets/fonts/gilroy";
-$dinpro-font-path: "../assets/fonts/DINPro";
+$gilroy-font-path: '../assets/fonts/gilroy';
+$dinpro-font-path: '../assets/fonts/DINPro';
 
-
 @font-face {
-    // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$gilroy-font-path}/Gilroy-Extrabold.woff2") format("woff2");
-    font-family: "Gilroy";
-    font-weight: 800;
-}
-@font-face {
-    // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$gilroy-font-path}/Gilroy-Regular.woff2") format("woff2");
-    font-family: "Gilroy";
-    font-weight: 400;
-}
-@font-face {
-    // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$gilroy-font-path}/Gilroy-Light.woff2") format("woff2");
-    font-family: "Gilroy";
-    font-weight: 300;
-}
-@font-face {
-    // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$gilroy-font-path}/Gilroy-Thin.woff2") format("woff2");
-    font-family: "Gilroy";
-    font-weight: 200;
+	src: url('#{$gilroy-font-path}/Gilroy-Extrabold.woff2') format('woff2');
+	font-family: 'Gilroy';
+	font-weight: 800;
 }
 
 @font-face {
-    // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$dinpro-font-path}/dinpro_black.otf") format("orf");
-    font-family: "DINPro";
-    font-weight: 900;
+	src: url('#{$gilroy-font-path}/Gilroy-Regular.woff2') format('woff2');
+	font-family: 'Gilroy';
+	font-weight: 400;
+}
+
+@font-face {
+	src: url('#{$gilroy-font-path}/Gilroy-Light.woff2') format('woff2');
+	font-family: 'Gilroy';
+	font-weight: 300;
+}
+
+@font-face {
+	src: url('#{$gilroy-font-path}/Gilroy-Thin.woff2') format('woff2');
+	font-family: 'Gilroy';
+	font-weight: 200;
+}
+
+@font-face {
+	src: url('#{$dinpro-font-path}/dinpro_black.otf') format('otf');
+	font-family: 'DINPro';
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	src: url('#{$dinpro-font-path}/dinpro_bold.otf') format('otf');
+	font-family: 'DINPro';
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	src: url('#{$dinpro-font-path}/dinpro_medium.otf') format('otf');
+	font-family: 'DINPro';
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	src: url('#{$dinpro-font-path}/dinpro.otf') format('otf');
+	font-family: 'DINPro';
+	font-weight: 400;
+	font-style: normal;
 }

@@ -1,10 +1,10 @@
-import styles from 'pages/Promo/promo.module.scss';
-import PromoLayout from 'pages/Promo/PromoLayout/PromoLayout';
+import styles from 'pages/PromoPage/promo.module.scss';
+import PromoLayoutPage from 'pages/PromoPage/PromoPageLayout/PromoPageLayout';
 import Button from 'components/Button/Button';
 
-const Promo = () => {
+const PromoPage = () => {
 	return (
-		<PromoLayout>
+		<PromoLayoutPage>
 			<div className={styles.container}>
 				<span className={styles.subtitle}>Привет,</span>
 				<span className={styles.title}>
@@ -14,8 +14,8 @@ const Promo = () => {
 					<Button>Что дальше?</Button>
 				</div>
 			</div>
-		</PromoLayout>
+		</PromoLayoutPage>
 	);
 };
 
-export default Promo;
+export default PromoPage;
