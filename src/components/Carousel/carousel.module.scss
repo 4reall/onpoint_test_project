@@ -1,6 +1,3 @@
-.container {
-}
-
 .window {
 	position: relative;
 	overflow: hidden;
@@ -17,19 +14,4 @@
 
 .slide {
 	height: 100%;
-}
-
-.controls {
-	&Dot {
-	}
-
-	&ArrowLeft {
-		width: 30px;
-		height: 30px;
-	}
-
-	&ArrowRight {
-		width: 30px;
-		height: 30px;
-	}
 }

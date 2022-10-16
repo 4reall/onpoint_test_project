@@ -1,14 +1,14 @@
-import styles from 'components/FloatImage/floatImage.module.scss';
 import { CSSProperties, PropsWithChildren } from 'react';
 import classNames from 'classnames';
+import styles from 'components/FloatImage/floatImage.module.scss';
 
 interface FloatImageProps {
 	zIndex?: number;
 	position?: {
-		left?: number;
-		right?: number;
-		top?: number;
-		bottom?: number;
+		left?: number | string;
+		right?: number | string;
+		top?: number | string;
+		bottom?: number | string;
 	};
 	rotate?: number;
 	w?: number;

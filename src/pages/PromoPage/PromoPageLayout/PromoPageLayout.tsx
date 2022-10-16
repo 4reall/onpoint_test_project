@@ -1,17 +1,18 @@
-import bg from 'assets/images/promo/bg.png';
+import { PropsWithChildren } from 'react';
+
+import Screen from 'components/Screen/Screen';
 import FloatImage from 'components/FloatImage/FloatImage';
+
 import sperm from 'assets/images/pink_sperm.png';
 import ball from 'assets/images/promo/blue_ball.png';
 import virus from 'assets/images/promo/blue_virus.png';
 import cell from 'assets/images/promo/blue_cell.png';
 import worm from 'assets/images/promo/blue_worm.png';
-import Screen from 'components/Screen/Screen';
-import { PropsWithChildren } from 'react';
 import styles from 'pages/PromoPage/PromoPageLayout/promoPageLayout.module.scss';
 
 const PromoLayoutPage = ({ children }: PropsWithChildren<{}>) => {
 	return (
-		<Screen backgroundImage={bg} className={styles.screen}>
+		<Screen className={styles.screen}>
 			{children}
 			<FloatImage
 				zIndex={3}

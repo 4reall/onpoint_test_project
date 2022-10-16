@@ -1,0 +1,25 @@
+@use '../../../styles/variables';
+
+.list {
+}
+
+.listItem {
+	margin-top: 15px;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&Number {
+		color: #8cc9e8;
+		font-size: 26px;
+		font-weight: bold;
+	}
+
+	&Text {
+		//margin-top: 5px;
+
+		font-size: 26px;
+		color: variables.$gray;
+	}
+}

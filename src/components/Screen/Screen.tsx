@@ -1,30 +1,15 @@
-import styles from 'components/Screen/screen.module.scss';
-import { CSSProperties, PropsWithChildren } from 'react';
-import Header from 'components/Header/Header';
+import { PropsWithChildren } from 'react';
 import classNames from 'classnames';
+import styles from 'components/Screen/screen.module.scss';
 
 interface ScreenProps {
-	backgroundImage?: string;
-	backgroundColor?: CSSProperties['backgroundColor'];
 	className?: string;
 }
 
-const Screen = ({
-	children,
-	backgroundImage,
-	backgroundColor,
-	className,
-}: PropsWithChildren<ScreenProps>) => {
+const Screen = ({ children, className }: PropsWithChildren<ScreenProps>) => {
 	return (
-		<section
-			className={classNames(className, styles.container)}
-			style={{ backgroundColor }}
-		>
-			<Header onClick={() => {}} />
+		<section className={classNames(className, styles.container)}>
 			{children}
-			{backgroundImage && (
-				<img src={backgroundImage} className={styles.background} />
-			)}
 		</section>
 	);
 };

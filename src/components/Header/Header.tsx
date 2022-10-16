@@ -1,6 +1,6 @@
 import { ComponentProps } from 'react';
-import { ReactComponent as Home } from 'assets/images/home.svg';
 import styles from 'components/Header/header.module.scss';
+import { ReactComponent as Home } from 'assets/images/home.svg';
 
 interface HeaderProps {
 	onClick: ComponentProps<'button'>['onClick'];
@@ -9,7 +9,7 @@ interface HeaderProps {
 const Header = ({ onClick }: HeaderProps) => {
 	return (
 		<header className={styles.header}>
-			<button className={styles.button}>
+			<button onClick={onClick} className={styles.button}>
 				<Home />
 			</button>
 			<span className={styles.divider} />

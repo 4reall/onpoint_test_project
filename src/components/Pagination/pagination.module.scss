@@ -1,0 +1,121 @@
+@use '../../styles/variables';
+
+.fadeInEnter {
+	opacity: 0;
+}
+
+.fadeInEnterActive {
+	transition: 200ms;
+	opacity: 1;
+}
+
+.fadeInExit {
+	opacity: 1;
+}
+
+.fadeInExitActive {
+	transition: 200ms;
+	opacity: 0;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.page {
+	flex-grow: 1;
+	margin-bottom: 50px;
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+	position: absolute;
+
+	&Dots {
+		display: flex;
+		margin: 0 10px 0 10px;
+	}
+
+	&Dot {
+		margin-left: 10px;
+		width: 11px;
+		height: 11px;
+		border-radius: 50%;
+		background: transparent;
+		border: 1px solid variables.$gray;
+		transition: 200ms;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&Active {
+			background: variables.$main_color;
+			border: none;
+		}
+	}
+
+	&ArrowLeft {
+		width: 30px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: transparent;
+		border: none;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 13px;
+			height: 3px;
+			background: variables.$gray;
+			transform: rotate(45deg);
+			transform-origin: left;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 2px;
+			background: variables.$gray;
+			transform: rotate(-45deg);
+			transform-origin: left;
+		}
+	}
+
+	&ArrowRight {
+		width: 30px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: transparent;
+		border: none;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 2px;
+			background: variables.$gray;
+			transform: rotate(45deg);
+			transform-origin: right;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 13px;
+			height: 3px;
+			background: variables.$gray;
+			transform: rotate(-45deg);
+			transform-origin: right;
+		}
+	}
+}

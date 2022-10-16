@@ -1,11 +1,11 @@
 import styles from 'components/Slider/slider.module.scss';
-import {useState, TouchEvent, useRef} from 'react';
+import { useState, TouchEvent, useRef } from 'react';
 
 interface SliderProps {
 	setProgress: (number: number) => void;
 }
 
-const Slider = ({setProgress}: SliderProps) => {
+const Slider = ({ setProgress }: SliderProps) => {
 	const [offset, setOffset] = useState(0);
 	const [dragging, setDragging] = useState(false);
 	const shiftY = useRef(0);
@@ -30,8 +30,6 @@ const Slider = ({setProgress}: SliderProps) => {
 		const maxHeight =
 			truckRef.current?.getBoundingClientRect().height -
 			e.currentTarget.getBoundingClientRect().height;
-
-		console.log(y)
 
 		// top limit
 		if (y < 0) {
@@ -59,10 +57,10 @@ const Slider = ({setProgress}: SliderProps) => {
 				onTouchStart={handleTouchStart}
 				onTouchMove={handleTouchMove}
 				onTouchEnd={handleTouchEnd}
-				style={{top: offset}}
+				style={{ top: offset }}
 				className={styles.slider}
 			/>
-			<span ref={truckRef} className={styles.truck}/>
+			<span ref={truckRef} className={styles.truck} />
 		</div>
 	);
 };

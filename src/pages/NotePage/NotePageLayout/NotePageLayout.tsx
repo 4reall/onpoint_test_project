@@ -1,27 +1,28 @@
-import Screen from 'components/Screen/Screen';
 import { PropsWithChildren } from 'react';
+
+import Screen from 'components/Screen/Screen';
 import FloatImage from 'components/FloatImage/FloatImage';
-import styles from 'pages/NotePage/NotePageLayout/notePageLayout.module.scss';
+
 import sperm from 'assets/images/pink_sperm.png';
+import styles from 'pages/NotePage/NotePageLayout/notePageLayout.module.scss';
 
 const NotePageLayout = ({ children }: PropsWithChildren<{}>) => {
 	return (
 		<Screen className={styles.screen}>
 			<div className={styles.content}>{children}</div>
-			<FloatImage className={styles.blurBlue} />
-			<FloatImage
-				className={styles.blurPink}
-				position={{ top: -20, right: -40 }}
-				rotate={30}
-				zIndex={1}
-			/>
-			<FloatImage
-				className={styles.blurBlue}
-				position={{ top: -100, right: -150 }}
-				rotate={30}
-				zIndex={1}
-			/>
-			<FloatImage position={{ top: 400, right: 200 }} zIndex={1} />
+			{/*<FloatImage className={styles.blurBlue} />*/}
+			{/*<FloatImage*/}
+			{/*	className={styles.blurPink}*/}
+			{/*	position={{ top: -20, right: -40 }}*/}
+			{/*	rotate={30}*/}
+			{/*	zIndex={1}*/}
+			{/*/>*/}
+			{/*<FloatImage*/}
+			{/*	className={styles.blurBlue}*/}
+			{/*	position={{ top: -100, right: -150 }}*/}
+			{/*	rotate={30}*/}
+			{/*	zIndex={1}*/}
+			{/*/>*/}
 			<FloatImage
 				zIndex={3}
 				position={{ top: 50, right: -270 }}

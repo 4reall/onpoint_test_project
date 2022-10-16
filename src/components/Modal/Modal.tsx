@@ -1,11 +1,8 @@
-import {
-	ComponentPropsWithoutRef,
-	CSSProperties,
-	PropsWithChildren,
-} from 'react';
+import { ComponentPropsWithoutRef, PropsWithChildren } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import styles from './modal.module.scss';
 import classNames from 'classnames';
+
+import styles from './modal.module.scss';
 
 interface ModalProps {
 	isOpen: boolean;

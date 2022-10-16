@@ -1,15 +1,16 @@
-import bg from 'assets/images/modal/bg.png';
-import styles from './benefitsPageLayout.module.scss';
-import FloatImage from 'components/FloatImage/FloatImage';
-import bottle from 'assets/images/modal/bottle.png';
-import dish from 'assets/images/modal/dish.png';
-import schedule from 'assets/images/modal/schedule.png';
-import Screen from 'components/Screen/Screen';
 import { PropsWithChildren } from 'react';
+
+import Screen from 'components/Screen/Screen';
+import FloatImage from 'components/FloatImage/FloatImage';
+
+import bottle from 'assets/images/benefits/bottle.png';
+import dish from 'assets/images/benefits/dish.png';
+import schedule from 'assets/images/benefits/schedule.png';
+import styles from './benefitsPageLayout.module.scss';
 
 const BenefitsPageLayout = ({ children }: PropsWithChildren<{}>) => {
 	return (
-		<Screen backgroundImage={bg} className={styles.screen}>
+		<Screen className={styles.screen}>
 			<FloatImage position={{ left: 10, bottom: 0 }} zIndex={30}>
 				<img src={bottle} />
 			</FloatImage>

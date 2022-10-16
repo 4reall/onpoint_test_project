@@ -1,8 +1,13 @@
-import styles from 'pages/PromoPage/promo.module.scss';
+import { ComponentPropsWithoutRef } from 'react';
 import PromoLayoutPage from 'pages/PromoPage/PromoPageLayout/PromoPageLayout';
 import Button from 'components/Button/Button';
+import styles from 'pages/PromoPage/promo.module.scss';
 
-const PromoPage = () => {
+interface PromoPage {
+	onButtonClick: ComponentPropsWithoutRef<'button'>['onClick'];
+}
+
+const PromoPage = ({ onButtonClick }: PromoPage) => {
 	return (
 		<PromoLayoutPage>
 			<div className={styles.container}>
@@ -11,7 +16,7 @@ const PromoPage = () => {
 					Это <strong>не</strong> коммерческое задание
 				</span>
 				<div className={styles.buttonContainer}>
-					<Button>Что дальше?</Button>
+					<Button onClick={onButtonClick}>Что дальше?</Button>
 				</div>
 			</div>
 		</PromoLayoutPage>
